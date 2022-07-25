@@ -11,7 +11,6 @@ Bundler.require(*Rails.groups)
 module App
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
-    config.middleware.delete ActionDispatch::HostAuthorization
     config.load_defaults 6.1
     config.i18n.default_locale = :ja
     config.time_zone = 'Asia/Tokyo'
